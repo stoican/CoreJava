@@ -34,7 +34,8 @@ public class TaxiTest {
                     taxiService.printTopSpeedAndCost(taxi1);
                     break;
                 case 2:
-                    taxiService.getNewerTaxi(taxi1, taxi2);
+                    Taxi n = taxiService.getNewerTaxi(taxi1, taxi2);
+                    n.printTaxi();
                     break;
                 case 3:
                     taxiService.printCountryOfTaxiWithSmallestSeatCount(taxi1, taxi2, taxi3);
@@ -46,14 +47,14 @@ public class TaxiTest {
                     taxiService.printSportCarsWithMoreThan50000(new Taxi[]{taxi1, taxi2, taxi3, taxi4});
                     break;
                 case 6:
-                    System.out.println("Min Weight Taxi:" +
-                            taxiService.getTaxiWithMinWeight(new Taxi[]{taxi1, taxi2, taxi3, taxi4})
-                            );
+                    Taxi minW = taxiService.getTaxiWithMinWeight(new Taxi[]{taxi1, taxi2, taxi3, taxi4});
+                    System.out.println("Min Weight Taxi: ");
+                    minW.printTaxi();
                     break;
                 case 7:
-                    System.out.println("Min Cost Taxi: " +
-                            taxiService.getSportTaxiWithMinimalCost(new Taxi[]{taxi1, taxi2, taxi3, taxi4})
-                            );
+                    Taxi minC = taxiService.getTaxiWithMinWeight(new Taxi[]{taxi1, taxi2, taxi3, taxi4});
+                    System.out.println("Min Cost Taxi: ");
+                    minC.printTaxi();
                     break;
                 case 8:
                     taxiService.printTaxisInAscendingOrderByYear(new Taxi[]{taxi1, taxi2, taxi3, taxi4});
