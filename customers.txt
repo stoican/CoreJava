@@ -1,0 +1,4 @@
+John,Doe,1,UK,London,39333,UK-29385,5400.0,false
+Peter,Musk,2,Netherlands,Amsterdam,4333,NL2929292,1000.0,true
+Joe,Biden,3,USA,Delaware,09489,US888888,100000.0,true
+Kamala,HarrisHarris,4,USA,LA,28282,US77777,100000.0,false
